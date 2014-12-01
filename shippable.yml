@@ -1,4 +1,4 @@
-language: aaruby\\
+language: ruby
 
 services:
   - cassandra
