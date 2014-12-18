@@ -1,5 +1,6 @@
 language: ruby
 
+
 services:
   - cassandra
 
@@ -12,3 +13,4 @@ script:
   - ruby sample.rb
   - cassandra-cli -host localhost -port 9160 -f removeKeyspace.txt
 
+archive: true
