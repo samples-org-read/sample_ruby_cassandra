@@ -1,5 +1,7 @@
 language: ruby
 
+env:
+ - secure: BUn560GIU6IikJCMb4ONONi9UZ0fLSVmH5zuzQWCclZJtUGjB4uUgPgr1sq5SEWrGbenej7mXjnc+DNbFGpIgxUbWtUuZAbB3pELNhXUNpv5H3kB9jWzgYIs7bq3WHCKeyI1ShMHRKPCMxQUbFCtnGD4wxSoOzVoflw4PQWBJTzOiqVigmeG6gVtAJndpE3Q3heHNNbjC6oDimj5Uz/SZ70GkP+5F01sYHyMI9V3jolDkylF0xSGm2hNATN5nzQ1kHN2yNA7cM8jsSNMpfjMVpqYWr8kpEEs2u6+fAgeDazuim/PjiIaT6Kzs30uqlnX+Fagz2dQpVgKh7pNtY0Fsw==
 
 services:
   - cassandra
@@ -12,5 +14,6 @@ script:
   - cassandra-cli -host localhost -port 9160 -f schema.txt
   - ruby sample.rb
   - cassandra-cli -host localhost -port 9160 -f removeKeyspace.txt
+  - echo $test
 
 archive: true
