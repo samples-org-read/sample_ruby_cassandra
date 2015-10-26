@@ -2,6 +2,7 @@ Ruby with Cassandra Sample
 =====================
 
 PR
+PR two from a public user
 
 
 Build sample written in ruby that uses `cassandra` database service
