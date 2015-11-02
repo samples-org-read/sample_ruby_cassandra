@@ -2,7 +2,7 @@ Ruby with Cassandra Sample
 =====================
 
 PR
-
+PR 2
 
 Build sample written in ruby that uses `cassandra` database service
 
